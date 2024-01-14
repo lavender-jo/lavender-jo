@@ -154,6 +154,7 @@ z-index: 4;
     direction: rtl;
     font-family: salsa;
     padding: 20px;
+    direction: ltr;
                                                 
 }
 .first{
@@ -169,6 +170,7 @@ z-index: 4;
     direction: rtl;
     font-family: salsa;
     padding: 20px;
+    direction: ltr;
 }
 
 .row .left{
