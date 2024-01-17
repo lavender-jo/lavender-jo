@@ -5,7 +5,7 @@ window.onload=function(){
     window.addEventListener('scroll', scrollEffect);
 
     function scrollEffect(){
-        if(window.scrollY<50){
+        if(window.scrollY<75){
             eff.style.opacity = '1';
             eff.style.transition = '0.5s ease-in-out';
             
