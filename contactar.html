@@ -7,14 +7,13 @@
   </head>
   <body>
     <header id="navbar">
-        <img class="logo" src="src/logo.png">
+        <a href="index.html"><img class="logo" src="src/logo.png"></a>
             <div class="leftlang">
                 <li><a href="english.html" onclick="changeLanguage('en')">En</a></li>
             </div>
     <nav >
         <ul>
-            <li><a href="#projects">قصتنا</a></li>
-            <li><a href="contactar.html">ارسل لنا</a></li>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
             <li><a href="mailto:lavendermagazine24@gmail.com">البريد الالكتروني</a></li>
         </ul>
     </nav>
@@ -23,7 +22,7 @@
             <img class="body-img-right" src="src/lavenderr.png">
 
             
-    <form id="contactForm" method="post" action='' enctype=”text/plain” name="EmailForm">
+    <form onsubmit="emailSend(); reset(); return false;">
         <h1>ارسل لنا</h1>
     <p>يرجى ملء هذا النموذج</p>
       <fieldset>
@@ -57,19 +56,7 @@
       </fieldset>
       <input type="submit" value="أرسل" />
     </form>
-    <script>
-        function sendEmail() {
-            var form = document.getElementById("contactForm");
-            var formData = new FormData(form);
-
-            var mailtoLink = "mailto:mahmoudtarbolsi@gmail.com" + 
-                             "?subject=" + encodeURIComponent("New Contact Form Submission") +
-                             "&body=" + encodeURIComponent("Name: " + formData.get("name") + "\n" +
-                                                        "Email: " + formData.get("email") + "\n" +
-                                                        "Message: " + formData.get("message"));
-
-            window.location.href = mailtoLink;
-        }
-    </script>
+    <script src="email.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
