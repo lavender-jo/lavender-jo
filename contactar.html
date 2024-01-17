@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <title>contact us</title>
+    <link rel="stylesheet" href="contactar.css" />
+  </head>
+  <body>
+    <header id="navbar">
+        <img class="logo" src="src/logo.png">
+            <div class="leftlang">
+                <li><a href="english.html" onclick="changeLanguage('en')">En</a></li>
+            </div>
+    <nav >
+        <ul>
+            <li><a href="#projects">قصتنا</a></li>
+            <li><a href="contactar.html">ارسل لنا</a></li>
+            <li><a href="mailto:lavendermagazine24@gmail.com">البريد الالكتروني</a></li>
+        </ul>
+    </nav>
+    </header>
+    <img class="body-img-left" src="src/lavender.png">
+            <img class="body-img-right" src="src/lavenderr.png">
+
+            
+    <form id="contactForm" method="post" action='' enctype=”text/plain” name="EmailForm">
+        <h1>ارسل لنا</h1>
+    <p>يرجى ملء هذا النموذج</p>
+      <fieldset>
+        <label for="first-name">الاسم الاول:<input required id="first-name" name="first-name" type="text"  /></label>
+        <label for="last-name">الاسم الأخير:<input required id="last-name" name="last-name" type="text"  /></label>
+        <label for="email">البريد الالكتروني:<input required id="email" name="email" type="email"  /></label>
+        <label for="phone">الهاتف:<input id="number" name="phone" type=""  /></label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="address">عنوان الرسالة:<input required id="address" name="address" type=""  /></label>
+        <label for="message">الرسالة:
+            <textarea required id="bio" name="bio" rows="3" cols="30" placeholder="ميوو"></textarea>
+          </label>
+        <label for="profile-picture">ارفق ملف:<input id="profile-picture" type="file" name="file" /></label>
+        <!-- <label for="age"><input id="age" type="number" name="age" min="13" max="120" /></label> -->
+        <label for="referrer">كيف سمعت عنا؟
+          <select id="referrer" name="referrer">
+            <option value="">(أختر)</option>
+            <option value="1">news</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="terms-and-conditions">
+          <input required id="terms-and-conditions" type="checkbox"  name="terms-and-conditions" class="inline" /> أوافق على <a href="https://youtu.be/Hweqfxsrgac?si=0Pebip8Za25IZrfA" target="_blank">الأحكام والشروط</a>
+        </label>
+      </fieldset>
+      <input type="submit" value="أرسل" />
+    </form>
+    <script>
+        function sendEmail() {
+            var form = document.getElementById("contactForm");
+            var formData = new FormData(form);
+
+            var mailtoLink = "mailto:mahmoudtarbolsi@gmail.com" + 
+                             "?subject=" + encodeURIComponent("New Contact Form Submission") +
+                             "&body=" + encodeURIComponent("Name: " + formData.get("name") + "\n" +
+                                                        "Email: " + formData.get("email") + "\n" +
+                                                        "Message: " + formData.get("message"));
+
+            window.location.href = mailtoLink;
+        }
+    </script>
+  </body>
+</html>

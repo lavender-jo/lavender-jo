@@ -1,0 +1,150 @@
+
+:root{
+    --first-color: #fafafa; 
+    --second-color: #ffe9e3;
+    --third-color: #c4c1e0; 
+    --fourth-color: #B2A4D4;
+}
+body{
+    top:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    height:100%;
+    width: 100%;
+    background-color: #D1CBDF;
+}
+header{
+    background-color: #B2A4D4;
+    width:100%;
+    height: 60px;
+    position: fixed;
+    top:0;
+    z-index:4;
+    align-items: center;
+}
+.logo{
+    float: left;
+    width: 100px;
+    height:100px;
+    top: -15px;
+    position: absolute;
+}
+ul{
+    float: right;
+    display: flex;
+    list-style-type: none;
+}
+ul > li{
+    text-decoration: none;
+    margin-right:20px;
+    font-size: larger;   
+}
+a:hover {
+    cursor: pointer;
+    color: #fae885;
+}
+li > a{
+    color:var(--first-color);
+    text-decoration: none;
+}
+.leftlang{
+    position: fixed;
+margin-left: 80px;
+margin-top: 20px;
+list-style-type: none;
+z-index: 4;
+}
+  
+.body-img-left{
+    margin-left:70%;
+    position: fixed;
+    z-index: 1;
+}
+.body-img-right{
+    left:-175px;
+    margin-top: 200px;
+    position:fixed;
+    z-index: 1;
+}
+  
+  form {
+    background-color: rgba(178, 164, 212,0.9);
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    border-radius: 25px;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    margin-top: 100px;
+    z-index: 3;
+    margin-bottom: 50px;
+    color: white;
+
+  }
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 2px solid white;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    direction: rtl;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+
+  }
+  textarea{height: 200px;}
+  input, textarea {
+    background-color: #716998;
+    border: 1px solid #4D426E;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  
+  select{
+    background-color: #716998;
+    border: 1px solid #4D426E;
+    border-radius: 5px;
+    color: #ffffff;
+
+  }
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #716998;
+    border-color: #4D426E;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
