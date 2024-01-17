@@ -201,7 +201,7 @@ grid-gap: 50px 30px;
     grid-gap: 50px 30px;
 }
 .four{
-    margin-top: -50px;
+    margin-top: -60px;
 }
 iframe{
 
@@ -224,9 +224,14 @@ margin-top: -50px;
 
 .two .right{
     margin-right: 50px;
+    font-size: 23px;
+}
+
+.three .left{
+    height: 600px;
 }
 .three .right{
-    margin-right: -50px;
+    margin-right: 50px;
 }
  
 #contact{
