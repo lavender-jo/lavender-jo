@@ -88,9 +88,10 @@ li > a{
 }
 .imgLogo{
  position: absolute;
- left: 35%;
+ left: 10%;
  margin-top: 150px;
-
+border-radius: 250px;
+z-index: 3;
 
 }
 .leftlang{
@@ -139,25 +140,6 @@ z-index: 4;
     margin: 0 auto;
     padding: 20px 10px;
 }
-.row{
-    width:100%;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-gap: 50px 30px;
-    min-height:317px;
-    background-color: var(--fourth-color);
-    border-radius: 5px;
-    color: white;
-    font-size: 1.6rem;
-    letter-spacing: 0.6px;
-    column-width: 25rem; 
-    z-index: 3;
-    direction: rtl;
-    font-family: amiri;
-    padding: 20px;
-                                                
-}
 .first{
     width:80%;
     display: grid;
@@ -172,18 +154,61 @@ z-index: 4;
     font-family: amiri;
     padding: 20px;
 }
-
-.row .left{
-    overflow: hidden;
+.row{
+    width:100%;
+    max-width: 1170px;
+    min-height:317px;
+    display: grid;
+    grid-gap: 50px 30px;
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.6px;
+    column-width: 25rem; 
+    z-index: 3;
+    direction: rtl;
+    font-family: amiri;
+    padding: 20px;
+                                                
+}
+.two{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 50px 30px;
+}
+.three{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 50px 30px;
+}
+.four{
+    margin-top: -50px;
 }
 iframe{
-    width: 100%;
+    width: 80%;
     height:100%;
     object-fit: cover;
     border-radius: 5px;
+    align-items: center;
+    display: block;
+    margin: auto;
 
 }
+.one .left{
+width: 100%;
+height: 450px;
+}
+.one .right{
+margin-top: -50px;
+}
 
+.two .right{
+    margin-right: -50px;
+}
+.three .right{
+    margin-right: -50px;
+}
  
 #contact{
     z-index: 3;
