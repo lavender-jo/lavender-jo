@@ -142,6 +142,10 @@ z-index: 4;
     background-color: #716998;
     border-color: #4D426E;
     min-width: 300px;
+
+  }
+  input[type="submit"]:hover {
+    cursor: pointer;
   }
   
   input[type="file"] {
