@@ -13,6 +13,17 @@ body{
     width: 100%;
     background-color: #D1CBDF;
 }
+.body-img-left{
+    margin-left:70%;
+    position: fixed;
+    z-index: -1;
+}
+.body-img-right{
+    left:-175px;
+    margin-top: 200px;
+    position:fixed;
+    z-index: -1;
+}
 header{
     background-color: #B2A4D4;
     width:100%;
