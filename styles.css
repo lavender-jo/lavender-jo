@@ -143,13 +143,14 @@ li > a{
     margin-top: 250px;
 }
 #welcome-section p{
-    width:500px;
+    width:600px;
     margin-left: 50%;
     height:500px;
     z-index: 3;
     position: absolute;
     margin-top:70px;
-    font-size: 20px;
+    font-size: 18px;
+    word-spacing: 1px;
     color: white;
     direction: rtl;
     
@@ -177,7 +178,7 @@ display: block;
 
 }
 .effect{
-    font-size: 50px;
+    font-size: 40px;
     direction: rtl;
     
 }
