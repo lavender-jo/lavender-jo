@@ -22,8 +22,12 @@
     <img class="body-img-left" src="src/lavender.png">
             <img class="body-img-right" src="src/lavenderr.png">
 
-            
-    <form onsubmit="emailSend(); reset(); return false;">
+            <div id="ww_2cd0cf85ac4f8" v='1.3' loc='id' a='{"t":"ticker","lang":"ar","sl_lpl":1,"ids":["wl3070"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/" id="ww_2cd0cf85ac4f8_u" target="_blank">Free weather widget for website</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_2cd0cf85ac4f8"></script>
+    
+    <form action="https://formspree.io/f/xrgnbdzr"
+    method="POST"
+    enctype="multipart/form-data">
+      <input type="hidden" name="access_key" value="4023648f-1b9e-4569-b4af-83ac7e8f05c0">
         <h1>ارسل لنا</h1>
     <p>يرجى ملء هذا النموذج</p>
       <fieldset>
@@ -36,17 +40,17 @@
       <fieldset>
         <label for="address">عنوان الرسالة:<input required id="address" name="address" type=""  /></label>
         <label for="message">الرسالة:
-            <textarea required id="bio" name="bio" rows="3" cols="30" placeholder="ميوو"></textarea>
+            <textarea required id="message" name="message" rows="3" cols="30" placeholder="ميوو"></textarea>
           </label>
-        <label for="profile-picture">ارفق ملف:<input id="profile-picture" type="file" name="file" /></label>
+        <label for="file">ارفق ملف:<input id="profile-picture" type="file" name="file" /></label>
         <!-- <label for="age"><input id="age" type="number" name="age" min="13" max="120" /></label> -->
         <label for="referrer">كيف سمعت عنا؟
           <select id="referrer" name="referrer">
             <option value="">(أختر)</option>
-            <option value="1">news</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
+            <option value="1">من اعلان فييت</option>
+            <option value="2">ابو هريره</option>
+            <option value="3">كفيتيرية الهندسة</option>
+            <option value="4">أخرى</option>
           </select>
         </label>
       </fieldset>
@@ -57,7 +61,6 @@
       </fieldset>
       <input type="submit" value="أرسل" />
     </form>
-    <script src="email.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
   </body>
 </html>
