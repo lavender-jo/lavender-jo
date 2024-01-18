@@ -16,7 +16,7 @@
     .imgLogo{
         display: block !important;
         margin-left: 50px !important;
-        width: 300px !important;
+        width: 200px !important;
     }
     #welcome-section p{
         display: flex !important;
@@ -36,7 +36,7 @@
         width: 80% !important;
     }
     .one .left{
-        width: 400px !important;
+        width: 300px !important;
         height: auto !important;
     }
     .one .right{
@@ -50,7 +50,7 @@
         margin-right: 5% !important;
     }
     .two .left{
-        width: 400px !important;
+        width: 300px !important;
         height: 400px !important;
     }
     .two .right{
@@ -63,7 +63,7 @@
         grid-gap: 50px 30px !important;
     }
     .three .left{
-        width: 400px !important;
+        width: 300px !important;
         height: 400px !important;
     }
     .three .right{
