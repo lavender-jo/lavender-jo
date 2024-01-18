@@ -16,6 +16,7 @@
     .imgLogo{
         display: block !important;
         margin-left: 50px !important;
+        width: 300px !important;
     }
     #welcome-section p{
         display: flex !important;
@@ -27,23 +28,34 @@
     }
     .row{
         font-size: 20px !important;
+        width: 80% !important;
 
     }
     .first{
         font-size: 20px !important;
+        width: 80% !important;
     }
     .one .left{
         width: 400px !important;
         height: auto !important;
     }
+    .one .right{
+        width: 80% !important;
+
+    }
     .two{
         display: grid !important;
         grid-template-columns: repeat(1,1fr) !important;
         grid-gap: 50px 30px !important;
+        margin-right: 5% !important;
     }
     .two .left{
         width: 400px !important;
         height: 400px !important;
+    }
+    .two .right{
+        width: 80% !important;
+        margin-right: 5% !important;
     }
     .three{
         display: grid !important;
@@ -53,6 +65,10 @@
     .three .left{
         width: 400px !important;
         height: 400px !important;
+    }
+    .three .right{
+        width: 80% !important;
+        margin-right: 5% !important;
     }
 }
 
