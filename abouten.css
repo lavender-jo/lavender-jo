@@ -1,4 +1,8 @@
 
+@font-face {
+    font-family: amiri;
+    src: url(fonts/Salsa-Regular.ttf);
+}
 :root{
     --first-color: #fafafa; 
     --second-color: #ffe9e3;
@@ -8,10 +12,10 @@
 body{
     top:0;
     margin:0;
-    font-family: 'Poppins', sans-serif;
     height:100%;
     width: 100%;
     background-color: #D1CBDF;
+    font-family: amiri;
 }
 .body-img-left{
     margin-left:70%;
