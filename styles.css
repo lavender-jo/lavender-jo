@@ -21,6 +21,7 @@ body{
     margin:0;
     font-family: 'Poppins', sans-serif;
     height:100%;
+    width: 100%;
 }
 header{
     background-color: #B2A4D4;
@@ -78,7 +79,7 @@ li > a{
 }
 #welcome-section p{
     width:500px;
-    margin-left: 700px;
+    margin-left: 50%;
     height:500px;
     z-index: 3;
     position: absolute;
@@ -176,7 +177,7 @@ z-index: 4;
     padding: 20px;
 }
 .row{
-    width:100%;
+    width:90%;
     max-width: 1170px;
     min-height:317px;
     display: grid;
